@@ -36,13 +36,11 @@ Sure you can! Just call [`the_widget()`](http://codex.wordpress.org/Function_Ref
 
 * `page`: The page ID. *Required*.
 * `title`: The widget title.
-* `image-size`: The post thumbnail size. 
-* `link-text`: The text that will replace "Continue reading". You may leave it empty too.
 
 Example:
 ```
 <?php
-the_widget( 'SX_Featured_Page_Widget', array( 'page' => 734, 'link-text' => '', 'image-size' => 'large' ) );
+the_widget( 'SX_Featured_Page_Widget', array( 'page' => 734 ) );
 ?>
 ```
 
@@ -56,27 +54,6 @@ the_widget( 'SX_Featured_Page_Widget', 'page=' . get_page_by_path( 'about' )->ID
 ### Can I change the default text "Continue reading"? ###
 
 Yes. In your `functions.php` file, you cand use the `afpw_link_text` filter:
-```
-<?php
-function mytheme_change_afpw_link_text() {
-    return 'Learn more';
-}
-
-add_filter( 'afpw_link_text', 'mytheme_change_afpw_link_text' );
-?>
-```
-
-### Why am I unable to define a manual excerpt for my pages? ###
-
-First, check if the option for excerpts is not showing under "Screen Options". If that's the case, probably your theme doesn't support excerpts in pages. You need to use [`add_post_type_support()`](http://codex.wordpress.org/Function_Reference/add_post_type_support) inside your `functions.php` file:
-```
-<?php
-function mytheme_add_page_excerpt() {
-    add_post_type_support( 'page', 'excerpt' );
-}
-
-add_action( 'init', 'mytheme_add_page_excerpt' );
-?>
 ```
 
 ## Changelog ##
