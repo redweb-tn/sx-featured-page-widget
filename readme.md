@@ -23,7 +23,6 @@ Check official website for
 *   [Comments/Suggestion](http://www.redweb.tn/sx-featured-page-widget-wordpress-plugin)			
 *   [About author](http://www.sabri-elgueder.tn/)				
 
-== Contributing ==
 [SX Featured Page Widget](http://github.com/redweb-tn/sx-featured-page-widget) is available on GitHub. If you want to contribute, please fork it and send a pull request!
 
 == Installation ==
@@ -36,13 +35,9 @@ e.g.
 2. Activate the plugin through the 'Plugins' menu in WordPress
 3. Go to 'Widgets' menu and drag it to your sidebar
 
-[Installation instruction and configuration](http://www.redweb.tn/sx-featured-page-widget-wordpress-plugin)
-
 == Frequently Asked Questions ==
 
-[Frequently Asked Questions](http://www.redweb.tn/sx-featured-page-widget-wordpress-plugin/)
-
-### Can I use it outside my sidebar / widget area?
+= Can I use it outside my sidebar / widget area? =
 
 Sure you can! Just call [`the_widget()`](http://codex.wordpress.org/Function_Reference/the_widget) wherever you want to display your featured page. If you want to customize it, there's four arguments:
 
@@ -50,18 +45,19 @@ Sure you can! Just call [`the_widget()`](http://codex.wordpress.org/Function_Ref
 * `title`: The widget title.
 
 Example:
-```
+`
 <?php
-the_widget( 'SX_Featured_Page_Widget', array( 'page' => 734 ) );
+the_widget( 'SX_Featured_Page_Widget', array( 'page' => 311 ) );
 ?>
-```
+`
 
 If you don't know the page ID, you can try [`get_page_by_path()`](http://codex.wordpress.org/Function_Reference/get_page_by_path) function:
-```
+`
 <?php
 the_widget( 'SX_Featured_Page_Widget', 'page=' . get_page_by_path( 'about' )->ID );
 ?>
-```
+`
+[Frequently Asked Questions](http://www.redweb.tn/sx-featured-page-widget-wordpress-plugin/)
 
 == Screenshots ==
 
@@ -71,3 +67,9 @@ the_widget( 'SX_Featured_Page_Widget', 'page=' . get_page_by_path( 'about' )->ID
 
 = 1.0 =
 * First version. Final 08/12/2015
+
+
+== Upgrade Notice ==
+
+= 1.0 =
+This version fixes a security related bug.  Upgrade immediately.
