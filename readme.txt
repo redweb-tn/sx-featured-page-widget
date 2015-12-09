@@ -15,7 +15,7 @@ A WordPress widget to Feature a page and display its contents.
 
 == Description ==
 
-[SX Featured Page Widget](http://www.redweb.tn/sx-featured-page-widget-wordpress-plugin/) creates a widget that features a specific page, showing its contents..
+[SX Featured Page Widget](http://www.redweb.tn/sx-featured-page-widget-wordpress-plugin/) creates a widget that features a specific page, showing its contents.
 
 Check official website for
 
