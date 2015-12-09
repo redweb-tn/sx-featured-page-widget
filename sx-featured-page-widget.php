@@ -1,12 +1,14 @@
 <?php
 /*
 Plugin Name: SX Featured Page Widget
-Plugin URI: http://github.com/eduardozulian/sx-featured-page-widget
+Plugin URI: http://github.com/redweb-tn/sx-featured-page-widget
 Description: Feature a page and display its contents.
-Version: 1.0
 Author: Sabri El Gueder
-Author URI: http://www.sabri-elgueder.tn
-License: GPL2
+Author URI: http://www.sabri-elgueder.tn/
+Version: 1.0
+Tags: featured page, page widget, pages, sidebar, widget
+License: GPLv2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 Copyright 2015 Sabri El Gueder
 */
